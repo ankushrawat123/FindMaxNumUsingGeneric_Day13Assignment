@@ -8,7 +8,7 @@ namespace FindMaxNumUsingGeneric_Day13Assignment
 {
 
     public class GenericMaximum<T> where T : IComparable
-    {
+    { 
         public T[] value;
         public GenericMaximum(T[] value)
         {
