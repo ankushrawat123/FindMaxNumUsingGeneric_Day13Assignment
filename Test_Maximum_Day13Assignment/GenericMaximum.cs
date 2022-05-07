@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace FindMaxNumUsingGeneric_Day13Assignment
 {
-
     public class GenericMaximum<T> where T : IComparable
     { 
         public T[] value;
@@ -32,7 +31,6 @@ namespace FindMaxNumUsingGeneric_Day13Assignment
         public T MaxValue()
         {
             var sorted_values = Sort();
-
             return sorted_values[sorted_values.Length - 1];
         }
 
