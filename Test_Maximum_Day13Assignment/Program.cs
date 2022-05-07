@@ -22,12 +22,30 @@ switch (num)
 
         int[] intArray = { 100, 531, 432, 89, 34 };
         GenericMaximum<int> generic = new GenericMaximum<int>(intArray);
+        Console.WriteLine("\nArray int Value Before Sorting");
+        generic.display();
+        generic.Sort();
+        Console.WriteLine("\nArray int Value After Sorting");
+        generic.display();
         generic.PrintMaxValue();
+
         double[] doubleArray = { 85.5, 71.9, 35.4, 45.2, 67.8 };
         GenericMaximum<double> genericDouble = new GenericMaximum<double>(doubleArray);
+        Console.WriteLine("\nArray int Value Before Sorting");
+        genericDouble.display();
+        genericDouble.Sort();
+        Console.WriteLine("\nArray int Value After Sorting");
+        genericDouble.display();      
         genericDouble.PrintMaxValue();
+
         string[] stringArray = { "Ankush", "Lokesh", "Jeet", "Himanshu", "Kalauddin" };
         GenericMaximum<string> genericString = new GenericMaximum<string>(stringArray);
+        Console.WriteLine("\nArray int Value Before Sorting");
+        genericString.display();
+        genericString.Sort();
+        Console.WriteLine("\nArray int Value After Sorting");
+        genericString.display();
         genericString.PrintMaxValue();
+
         break;
 }

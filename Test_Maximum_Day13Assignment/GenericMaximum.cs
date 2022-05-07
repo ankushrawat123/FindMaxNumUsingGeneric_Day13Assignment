@@ -15,35 +15,30 @@ namespace FindMaxNumUsingGeneric_Day13Assignment
             this.value = value;
         }
 
-        public T[] Sort(T[] values)
+        public T[] Sort()
         {
-            Array.Sort(values);
-            return values;
+            Array.Sort(value);
+            return value;
 
         }
-
-        void add(params int[] a)
+        public void display()
         {
-
+            foreach( var a in value)
+            {
+                Console.WriteLine(a);
+            }
         }
 
-
-        public T MaxValue(params T[] values)
+        public T MaxValue()
         {
-            var sorted_values = Sort(values);
+            var sorted_values = Sort();
 
             return sorted_values[sorted_values.Length - 1];
         }
 
-        public T MaxMethod()
-        {
-            var max = MaxValue(this.value);
-            return max;
-        }
-
         public void PrintMaxValue()
         {
-            var max = MaxValue(this.value);
+            var max = MaxValue();
             Console.WriteLine("Maximum value is " + max);
         }
     }
