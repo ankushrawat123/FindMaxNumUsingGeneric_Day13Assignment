@@ -31,19 +31,19 @@ switch (num)
 
         double[] doubleArray = { 85.5, 71.9, 35.4, 45.2, 67.8 };
         GenericMaximum<double> genericDouble = new GenericMaximum<double>(doubleArray);
-        Console.WriteLine("\nArray int Value Before Sorting");
+        Console.WriteLine("\nArray Double Value Before Sorting");
         genericDouble.display();
         genericDouble.Sort();
-        Console.WriteLine("\nArray int Value After Sorting");
+        Console.WriteLine("\nArray Double Value After Sorting");
         genericDouble.display();      
         genericDouble.PrintMaxValue();
 
         string[] stringArray = { "Ankush", "Lokesh", "Jeet", "Himanshu", "Kalauddin" };
         GenericMaximum<string> genericString = new GenericMaximum<string>(stringArray);
-        Console.WriteLine("\nArray int Value Before Sorting");
+        Console.WriteLine("\nArray String Value Before Sorting");
         genericString.display();
         genericString.Sort();
-        Console.WriteLine("\nArray int Value After Sorting");
+        Console.WriteLine("\nArray String Value After Sorting");
         genericString.display();
         genericString.PrintMaxValue();
 
